@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/*   Header   */
+.header {
+  padding-top: 36px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .header {
+    padding-top: 19px;
+  }
+}
+.header__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header__head::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-width: 1170px;
+  width: 100%;
+  border: 1px solid #BABBC5;
+  transform: translate(0, 34px);
+}
+@media (max-width: 767px) {
+  .header__head::after {
+    display: none;
+  }
+}
+.header__logo {
+  max-width: 184px;
+  max-height: 26px;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    display: none;
+  }
+}
+.header__logo-mob {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header__logo-mob {
+    display: flex;
+    max-width: 102px;
+    max-height: 15px;
+    align-items: center;
+  }
+}
+.header__logo__navbar {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .header__logo__navbar {
+    display: none;
+  }
+}
+.header__hamburger {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header__hamburger {
+    display: inline-block;
+  }
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.header__menu__item {
+  min-width: 134px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .header__menu__item {
+    min-width: 112px;
+  }
+}
+.header__menu__item:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  max-width: 134px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(37px);
+  border-bottom: 3px solid transparent;
+}
+@media (max-width: 1024px) {
+  .header__menu__item:after {
+    max-width: 119px;
+  }
+}
+.header__menu__item:hover::after {
+  border-bottom: 3px solid #BABBC5;
+}
+.header__menu__item:active::after {
+  border-bottom: 3px solid #E71414;
+}
+.header__menu__link {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media (min-width: 321px) and (max-width: 1024px) {
+  .header__menu__link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.header__menu__link:active {
+  color: #E71414;
+}/*# sourceMappingURL=style.css.map */
